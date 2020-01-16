@@ -115,6 +115,19 @@ CheckOptions:
  - { key: readability-identifier-naming.PublicMemberCase,    value: CamelCase  } 
 ```
 
+## Hints
+
+- Do not push your `.vs` directory to GitHub. Visual Studio
+creates this directory to store cached files. Storing it in GitHub will
+waste space and time.
+
+- Do not push your executable to GitHub. You don't need a version controlled
+executable
+
+- Pay attention to clang-format suggestions: You should not have `int I=0;`
+It should be `int I = 0;`. You should not have `if(Num==10)` It should be
+`if (Num == 10)`
+
 ## Misc
 
 This files is part of a repository located at
